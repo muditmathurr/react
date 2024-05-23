@@ -6,9 +6,13 @@ import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
+      <h1>Counter : {count} </h1>
+
+      <button onClick={(e) => setCount(count + 1)}>Add Value </button>
+      <button onClick={(e) => setCount(count - 1)}>Remove Value </button>
+
       <h1 className='bg-green-400 text-black rounded-2xl p-4 mb-4'> Tailwind Test</h1>
       <Card username="Mudit" btn="Click Me!"/>
       <Card username="Pulkit" btn="Visit Me!" />
